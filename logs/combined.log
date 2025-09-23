@@ -1,0 +1,56 @@
+{"level":"info","message":"Clinical History AI Agent server running on port 3000","service":"clinical-history-ai","timestamp":"2025-09-23T17:37:27.047Z"}
+{"level":"info","message":"Environment: development","service":"clinical-history-ai","timestamp":"2025-09-23T17:37:27.049Z"}
+{"level":"info","message":"Access the application at: http://localhost:3000","service":"clinical-history-ai","timestamp":"2025-09-23T17:37:27.050Z"}
+{"level":"info","message":"Clinical History AI Agent server running on port 3000","service":"clinical-history-ai","timestamp":"2025-09-23T17:41:40.330Z"}
+{"level":"info","message":"Environment: development","service":"clinical-history-ai","timestamp":"2025-09-23T17:41:40.333Z"}
+{"level":"info","message":"Access the application at: http://localhost:3000","service":"clinical-history-ai","timestamp":"2025-09-23T17:41:40.333Z"}
+{"level":"info","message":"Clinical History AI Agent server running on port 3000","service":"clinical-history-ai","timestamp":"2025-09-23T17:44:22.725Z"}
+{"level":"info","message":"Environment: development","service":"clinical-history-ai","timestamp":"2025-09-23T17:44:22.728Z"}
+{"level":"info","message":"Access the application at: http://localhost:3000","service":"clinical-history-ai","timestamp":"2025-09-23T17:44:22.728Z"}
+{"level":"info","message":"Clinical History AI Agent server running on port 3000","service":"clinical-history-ai","timestamp":"2025-09-23T18:02:34.043Z"}
+{"level":"info","message":"Environment: development","service":"clinical-history-ai","timestamp":"2025-09-23T18:02:34.046Z"}
+{"level":"info","message":"Access the application at: http://localhost:3000","service":"clinical-history-ai","timestamp":"2025-09-23T18:02:34.047Z"}
+{"level":"info","message":"Clinical History AI Agent server running on port 3000","service":"clinical-history-ai","timestamp":"2025-09-23T18:16:00.304Z"}
+{"level":"info","message":"Environment: development","service":"clinical-history-ai","timestamp":"2025-09-23T18:16:00.307Z"}
+{"level":"info","message":"Access the application at: http://localhost:3000","service":"clinical-history-ai","timestamp":"2025-09-23T18:16:00.308Z"}
+{"level":"info","message":"Clinical History AI Agent server running on port 3000","service":"clinical-history-ai","timestamp":"2025-09-23T18:17:12.575Z"}
+{"level":"info","message":"Environment: development","service":"clinical-history-ai","timestamp":"2025-09-23T18:17:12.578Z"}
+{"level":"info","message":"Access the application at: http://localhost:3000","service":"clinical-history-ai","timestamp":"2025-09-23T18:17:12.579Z"}
+{"level":"info","message":"Clinical History AI Agent server running on port 3000","service":"clinical-history-ai","timestamp":"2025-09-23T18:27:06.354Z"}
+{"level":"info","message":"Environment: development","service":"clinical-history-ai","timestamp":"2025-09-23T18:27:06.356Z"}
+{"level":"info","message":"Access the application at: http://localhost:3000","service":"clinical-history-ai","timestamp":"2025-09-23T18:27:06.357Z"}
+{"level":"info","message":"Clinical History AI Agent server running on port 3000","service":"clinical-history-ai","timestamp":"2025-09-23T18:27:10.532Z"}
+{"level":"info","message":"Environment: development","service":"clinical-history-ai","timestamp":"2025-09-23T18:27:10.536Z"}
+{"level":"info","message":"Access the application at: http://localhost:3000","service":"clinical-history-ai","timestamp":"2025-09-23T18:27:10.537Z"}
+{"level":"info","message":"Clinical History AI Agent server running on port 3000","service":"clinical-history-ai","timestamp":"2025-09-23T18:27:16.397Z"}
+{"level":"info","message":"Environment: development","service":"clinical-history-ai","timestamp":"2025-09-23T18:27:16.399Z"}
+{"level":"info","message":"Access the application at: http://localhost:3000","service":"clinical-history-ai","timestamp":"2025-09-23T18:27:16.400Z"}
+{"level":"info","message":"Clinical History AI Agent server running on port 3000","service":"clinical-history-ai","timestamp":"2025-09-23T18:27:17.431Z"}
+{"level":"info","message":"Environment: development","service":"clinical-history-ai","timestamp":"2025-09-23T18:27:17.434Z"}
+{"level":"info","message":"Access the application at: http://localhost:3000","service":"clinical-history-ai","timestamp":"2025-09-23T18:27:17.435Z"}
+{"level":"info","message":"Clinical History AI Agent server running on port 3000","service":"clinical-history-ai","timestamp":"2025-09-23T18:27:18.644Z"}
+{"level":"info","message":"Environment: development","service":"clinical-history-ai","timestamp":"2025-09-23T18:27:18.647Z"}
+{"level":"info","message":"Access the application at: http://localhost:3000","service":"clinical-history-ai","timestamp":"2025-09-23T18:27:18.648Z"}
+{"level":"info","message":"Clinical History AI Agent server running on port 3000","service":"clinical-history-ai","timestamp":"2025-09-23T18:29:34.893Z"}
+{"level":"info","message":"Environment: development","service":"clinical-history-ai","timestamp":"2025-09-23T18:29:34.897Z"}
+{"level":"info","message":"Access the application at: http://localhost:3000","service":"clinical-history-ai","timestamp":"2025-09-23T18:29:34.899Z"}
+{"level":"error","message":"Error getting system stats: excelService.getSystemStats is not a function","service":"clinical-history-ai","stack":"TypeError: excelService.getSystemStats is not a function\n    at C:\\Users\\mishr\\myproject\\server.js:95:38\n    at Layer.handle [as handle_request] (C:\\Users\\mishr\\myproject\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\mishr\\myproject\\node_modules\\express\\lib\\router\\route.js:149:13)\n    at Route.dispatch (C:\\Users\\mishr\\myproject\\node_modules\\express\\lib\\router\\route.js:119:3)\n    at Layer.handle [as handle_request] (C:\\Users\\mishr\\myproject\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\mishr\\myproject\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\mishr\\myproject\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\mishr\\myproject\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at C:\\Users\\mishr\\myproject\\server.js:33:3\n    at Layer.handle [as handle_request] (C:\\Users\\mishr\\myproject\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (C:\\Users\\mishr\\myproject\\node_modules\\express\\lib\\router\\index.js:328:13)\n    at C:\\Users\\mishr\\myproject\\node_modules\\express\\lib\\router\\index.js:286:9\n    at Function.process_params (C:\\Users\\mishr\\myproject\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\mishr\\myproject\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at SendStream.error (C:\\Users\\mishr\\myproject\\node_modules\\serve-static\\index.js:121:7)\n    at SendStream.emit (node:events:518:28)","timestamp":"2025-09-23T18:33:34.519Z"}
+{"level":"error","message":"Error getting system stats: excelService.getSystemStats is not a function","service":"clinical-history-ai","stack":"TypeError: excelService.getSystemStats is not a function\n    at C:\\Users\\mishr\\myproject\\server.js:95:38\n    at Layer.handle [as handle_request] (C:\\Users\\mishr\\myproject\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\mishr\\myproject\\node_modules\\express\\lib\\router\\route.js:149:13)\n    at Route.dispatch (C:\\Users\\mishr\\myproject\\node_modules\\express\\lib\\router\\route.js:119:3)\n    at Layer.handle [as handle_request] (C:\\Users\\mishr\\myproject\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\mishr\\myproject\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\mishr\\myproject\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\mishr\\myproject\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at C:\\Users\\mishr\\myproject\\server.js:33:3\n    at Layer.handle [as handle_request] (C:\\Users\\mishr\\myproject\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (C:\\Users\\mishr\\myproject\\node_modules\\express\\lib\\router\\index.js:328:13)\n    at C:\\Users\\mishr\\myproject\\node_modules\\express\\lib\\router\\index.js:286:9\n    at Function.process_params (C:\\Users\\mishr\\myproject\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\mishr\\myproject\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at SendStream.error (C:\\Users\\mishr\\myproject\\node_modules\\serve-static\\index.js:121:7)\n    at SendStream.emit (node:events:518:28)","timestamp":"2025-09-23T18:34:24.785Z"}
+{"level":"info","message":"Clinical History AI Agent server running on port 3000","service":"clinical-history-ai","timestamp":"2025-09-23T18:37:51.327Z"}
+{"level":"info","message":"Environment: development","service":"clinical-history-ai","timestamp":"2025-09-23T18:37:51.330Z"}
+{"level":"info","message":"Access the application at: http://localhost:3000","service":"clinical-history-ai","timestamp":"2025-09-23T18:37:51.331Z"}
+{"level":"info","message":"Clinical History AI Agent server running on port 3000","service":"clinical-history-ai","timestamp":"2025-09-23T18:43:21.641Z"}
+{"level":"info","message":"Environment: development","service":"clinical-history-ai","timestamp":"2025-09-23T18:43:21.646Z"}
+{"level":"info","message":"Access the application at: http://localhost:3000","service":"clinical-history-ai","timestamp":"2025-09-23T18:43:21.647Z"}
+{"level":"info","message":"Clinical History AI Agent server running on port 3000","service":"clinical-history-ai","timestamp":"2025-09-23T18:55:41.763Z"}
+{"level":"info","message":"Environment: development","service":"clinical-history-ai","timestamp":"2025-09-23T18:55:41.768Z"}
+{"level":"info","message":"Access the application at: http://localhost:3000","service":"clinical-history-ai","timestamp":"2025-09-23T18:55:41.769Z"}
+{"level":"info","message":"Clinical History AI Agent server running on port 3000","service":"clinical-history-ai","timestamp":"2025-09-23T18:56:22.501Z"}
+{"level":"info","message":"Environment: development","service":"clinical-history-ai","timestamp":"2025-09-23T18:56:22.505Z"}
+{"level":"info","message":"Access the application at: http://localhost:3000","service":"clinical-history-ai","timestamp":"2025-09-23T18:56:22.506Z"}
+{"level":"info","message":"Processing file: certificate_priyanshu_mishra.pdf","service":"clinical-history-ai","timestamp":"2025-09-23T18:57:20.922Z"}
+{"level":"info","message":"Processing file: certificate_priyanshu_mishra.pdf","service":"clinical-history-ai","timestamp":"2025-09-23T18:57:22.799Z"}
+{"level":"info","message":"Processing file: Sample-filled-in-MR.pdf","service":"clinical-history-ai","timestamp":"2025-09-23T19:00:40.147Z"}
+{"level":"info","message":"Clinical History AI Agent server running on port 3000","service":"clinical-history-ai","timestamp":"2025-09-23T19:11:24.362Z"}
+{"level":"info","message":"Environment: development","service":"clinical-history-ai","timestamp":"2025-09-23T19:11:24.367Z"}
+{"level":"info","message":"Access the application at: http://localhost:3000","service":"clinical-history-ai","timestamp":"2025-09-23T19:11:24.368Z"}

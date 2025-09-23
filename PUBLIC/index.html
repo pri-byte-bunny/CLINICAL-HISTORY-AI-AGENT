@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinical History AI Agent</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🏥 Clinical History AI Agent</h1>
+            <p class="subtitle">Transform patient education materials into structured clinical histories</p>
+            
+            <div class="stats-grid" id="statsGrid">
+                <div class="stat-card">
+                    <div class="stat-number" id="processedCount">0</div>
+                    <div class="stat-label">Documents Processed</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="historiesGenerated">0</div>
+                    <div class="stat-label">Histories Generated</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="avgProcessingTime">0s</div>
+                    <div class="stat-label">Avg Processing Time</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="successRate">100%</div>
+                    <div class="stat-label">Success Rate</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="settings-panel">
+            <h2><span class="icon">⚙</span>Configuration Settings</h2>
+            <form id="settingsForm">
+                <div class="settings-grid">
+                    <div class="setting-group">
+                        <label class="setting-label" for="outputFormat">Output Format</label>
+                        <select id="outputFormat" name="outputFormat" class="setting-input">
+                            <option value="soap">SOAP Format</option>
+                            <option value="narrative">Narrative Format</option>
+                            <option value="structured">Structured Format</option>
+                        </select>
+                    </div>
+                    <div class="setting-group">
+                        <label class="setting-label" for="detailLevel">Detail Level</label>
+                        <select id="detailLevel" name="detailLevel" class="setting-input">
+                            <option value="concise">Concise</option>
+                            <option value="standard" selected>Standard</option>
+                            <option value="detailed">Detailed</option>
+                        </select>
+                    </div>
+                    <div class="setting-group">
+                        <label class="setting-label">Additional Options</label>
+                        <div class="checkbox-group">
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="includeICD10" name="includeICD10" checked>
+                                <label for="includeICD10">Include ICD-10 Codes</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="includeMedications" name="includeMedications" checked>
+                                <label for="includeMedications">Include Medications</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="main-grid">
+            <div class="card">
+                <h2><span class="icon">📁</span>Document Upload</h2>
+                
+                <!-- File Input - Hidden but accessible -->
+                <input type="file" 
+                       id="fileInput" 
+                       class="file-input" 
+                       multiple 
+                       accept=".pdf,.docx,.txt,.doc"
+                       style="display: none;">
+                
+                <div class="upload-area" id="uploadArea">
+                    <div class="upload-icon">📄</div>
+                    <div class="upload-text">Drop your medical documents here</div>
+                    <div class="upload-hint">Supports PDF, DOCX, TXT files up to 50MB</div>
+                </div>
+                
+                <div class="upload-controls">
+                    <button type="button" class="btn" id="browseFilesBtn">
+                        📁 Browse Files
+                    </button>
+                    <button type="button" class="btn btn-secondary" id="clearFilesBtn">
+                        🗑️ Clear All
+                    </button>
+                </div>
+                
+                <div class="file-list" id="fileList"></div>
+                
+                <div id="processingStatus"></div>
+                <div class="progress-container" id="progressContainer" style="display: none;">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressBar"></div>
+                    </div>
+                    <div class="progress-text" id="progressText">0%</div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2><span class="icon">🔄</span>Processing Controls</h2>
+                <div class="control-buttons">
+                    <button type="button" class="btn btn-primary" id="processBtn" disabled>
+                        ⚡ Process Documents
+                    </button>
+                    <button type="button" class="btn btn-secondary" id="downloadExcelBtn">
+                        📊 Download Excel Report
+                    </button>
+                    <button type="button" class="btn btn-secondary" id="viewHistoriesBtn">
+                        📋 View All Histories
+                    </button>
+                </div>
+                
+                <div class="system-info" id="systemInfo">
+                    <div class="info-item">
+                        <span class="info-label">Server Status:</span>
+                        <span class="info-value" id="serverStatus">Checking...</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Last Updated:</span>
+                        <span class="info-value" id="lastUpdated">Never</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card full-width">
+            <h2><span class="icon">📋</span>Generated Clinical Histories</h2>
+            <div class="output-controls">
+                <button class="btn btn-small" id="clearOutputBtn">Clear Output</button>
+                <button class="btn btn-small" id="exportOutputBtn">Export Current</button>
+            </div>
+            <div class="output-area" id="outputArea">
+                <div class="output-placeholder">
+                    <div class="placeholder-icon">📄</div>
+                    <div class="placeholder-text">Processed clinical histories will appear here...</div>
+                    <div class="placeholder-hint">Upload and process medical documents to begin</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card full-width">
+            <h2><span class="icon">📊</span>Processing History</h2>
+            <div class="history-table-container">
+                <table class="history-table" id="historyTable">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>File Name</th>
+                            <th>Format</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="historyTableBody">
+                        <tr>
+                            <td colspan="5" class="no-data">No processing history available</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Loading Modal -->
+    <div class="modal" id="loadingModal" style="display: none;">
+        <div class="modal-content">
+            <div class="loading-spinner"></div>
+            <h3>Processing Documents</h3>
+            <p id="loadingText">Initializing...</p>
+        </div>
+    </div>
+
+    <!-- Load external JavaScript file -->
+    <script src="app.js"></script>
+</body>
+</html>

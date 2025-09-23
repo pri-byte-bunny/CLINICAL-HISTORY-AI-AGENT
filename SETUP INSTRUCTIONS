@@ -1,0 +1,86 @@
+const setupInstructions = `
+# CLINICAL HISTORY AI AGENT - SETUP INSTRUCTIONS
+
+## Prerequisites
+- Node.js 16+ installed
+- npm or yarn package manager
+
+## Installation Steps
+
+1. Create project directory:
+   mkdir clinical-history-ai-agent
+   cd clinical-history-ai-agent
+
+2. Initialize npm project:
+   npm init -y
+
+3. Install dependencies:
+   npm install express multer cors helmet morgan winston xlsx mammoth pdf2pic textract dotenv axios openai path fs-extra moment
+   npm install --save-dev nodemon
+
+4. Create directory structure:
+   mkdir services public uploads data logs
+
+5. Create all the files shown above:
+   - server.js (main server file)
+   - services/documentProcessor.js
+   - services/clinicalHistoryGenerator.js
+   - services/excelService.js
+   - public/index.html
+   - public/styles.css
+   - public/app.js
+   - .env (environment configuration)
+
+6. Update package.json scripts:
+   {
+     "scripts": {
+       "start": "node server.js",
+       "dev": "nodemon server.js"
+     }
+   }
+
+## Running the Application
+
+1. Development mode:
+   npm run dev
+
+2. Production mode:
+   npm start
+
+3. Access the application:
+   Open browser to http://localhost:3000
+
+## Features
+
+✅ Complete Node.js backend with Express
+✅ File upload handling (PDF, DOCX, TXT)
+✅ AI-powered clinical history generation
+✅ Excel data storage and reporting
+✅ Modern responsive web interface
+✅ Real-time processing status
+✅ Batch document processing
+✅ Download and export capabilities
+✅ Processing statistics and history
+✅ Error handling and logging
+
+## API Endpoints
+
+- GET /api/health - Server health check
+- GET /api/stats - System statistics
+- POST /api/upload - Upload and process documents
+- GET /api/download/excel - Download Excel report
+- GET /api/download/history/:id - Download individual history
+- GET /api/histories - Get all processed histories
+
+## File Storage
+
+- Processed data is automatically saved to Excel files in the /data directory
+- Excel files include comprehensive clinical history data with metadata
+- Files are organized with timestamps and unique IDs
+- Processing history is maintained for audit purposes
+
+This is a complete, production-ready Node.js application that meets your requirements!
+`;
+
+console.log("\\n📋 SETUP INSTRUCTIONS:");
+console.log(setupInstructions);
