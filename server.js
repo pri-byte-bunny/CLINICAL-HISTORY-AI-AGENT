@@ -43,6 +43,11 @@ const createDirectories = () => {
 };
 createDirectories();
 
+// Serve the main app at root
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
+
 // Routes
 app.get('/api/health', (req, res) => {
   res.json({ 
